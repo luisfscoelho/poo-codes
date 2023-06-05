@@ -1,0 +1,19 @@
+package IMC;
+
+import javax.swing.JOptionPane;
+
+public class IMC
+{
+	public static void main(String[] args) {
+		float height;
+        float weight;
+        float imc;
+
+        height = Float.parseFloat(JOptionPane.showInputDialog("Altura:"));
+        weight = Float.parseFloat(JOptionPane.showInputDialog("Peso"));
+
+        imc = weight / (height * height);
+
+        JOptionPane.showMessageDialog(null, "IMC: " + imc);
+	}
+}
